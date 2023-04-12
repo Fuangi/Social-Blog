@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* these are the main colors to be used on the website */
+:root{
+    --primary-color: #5107fd;
+    --secondary-color: #000;
+}
+ body{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#form{
+    display: block;
+    padding: 4rem;
+    /* background: linear-gradient(to right, rgba(81, 7, 253, 0.5), rgba(0, 0, 0, 0.5)); */
+}
+.log-form{
+    display: block;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.log-form input{
+    display: block;
+}
+.log-form fieldset{
+    width: 100%;
+}
+.log-form > fieldset > input, .log-form > fieldset > select, 
+.log-form > fieldset > div{
+    display: block;
+    padding: 1rem;
+    width: 80%;
+    margin: 1rem;
+    position: relative;
+    left: 40%;
+    transform: translateX(-40%);
+
+}
+.log-form fieldset div{
+    display: block;
+}
+.log-form fieldset div label, .log-form fieldset div input{
+    display: inline;
+}
+.log-form fieldset input, .log-form fieldset select{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+.log-form fieldset input:invalid, .log-form fieldset select:invalid{
+    border-bottom: 1px solid rgb(230, 24, 24);
+}
+.log-form fieldset input:valid, .log-form fieldset select:valid{
+    border: none;
+    border-bottom: 1px solid rgb(73, 13, 212);
+}
+.log-form fieldset input:last-child{
+    border: 1px solid #333;
+    font-size: 1rem;
+    color: grey;
+    width: 50%;
+    cursor: pointer;
+}
+.pagination{
+    margin: 2px auto;
+}
+.pagination a{
+    display: inline-block;
+    margin: 1rem 1rem;
+    padding: .5rem;
+    width: 1rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+.active{
+    background-color: black;
+}

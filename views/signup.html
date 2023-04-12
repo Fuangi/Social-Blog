@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Social Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="form">
+        <form action="" method="post" class="log-form">
+            <h1>Signup on Social Blog</h1>
+            <fieldset id="user-essential-details">
+                <legend>User essential details</legend>
+                <!-- <label for="name">Name:</label> -->
+                <input type="text" name="user_name" placeholder="Enter Your Name" required>
+
+                <!-- <label for="dob">DOB:</label> -->
+                <input type="date" name="dateOfBirth" required id="date-of-birth" required>
+
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label><br>
+
+                <label for="status">Status: </label><br>
+                <select name="status" id="status" required>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Reserved">Prefer Not To Say</option>
+                </select>
+<!--                 <label for="name">Status:</label>
+                <input type="radio" name="status" id="single">
+                <label for="single">Single</label>
+                <input type="radio" name="status" id="married">
+                <label for="single">Married</label> -->
+
+                <!-- <label for="name">Contact:</label> -->
+                <input type="tel" name="tel" placeholder="Contact" id="contact" required>
+                <input type="button" value="Continue" id="continueOne">
+            </fieldset>
+        </form>
+   </section>
+</body>
+</html>
